@@ -1,0 +1,23 @@
+.opcao1{
+   background: black;
+   color: white;
+   outline: 2px solid grey;
+}
+
+.opcao2{
+   background: lightgreen;
+   color: black;
+   outline: 2px solid darkgreen;
+}
+
+.opcao3{
+    background: darkred;
+   color: white;
+   outline: 2px solid red;
+}
+
+.opcao4{
+    background: pink;
+   color: white;
+   outline: 2px solid palevioletred;
+}

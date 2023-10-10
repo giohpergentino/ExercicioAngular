@@ -1,1 +1,22 @@
-<p>exercicios works!</p>
+<p> {{ saudacao }}</p>
+
+<a [href]="link">{{ link }}</a>
+  
+<br>
+<br>
+
+<article> 
+    <select #seleciona (change)="selecionaClasse(seleciona.value)">
+        <option value="opcao1"> Opção 1</option>
+        <option value="opcao2"> Opção 2</option>
+        <option value="opcao3"> Opção 3</option>
+        <option value="opcao4"> Opção 4</option>
+    </select>
+<br>
+<br>
+    <div class="opcao1" *ngIf="classe === 'opcao1'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, porro! Minima saepe iste accusamus magni, possimus inventore blanditiis at fugit repellendus, quae provident aspernatur! Numquam temporibus dignissimos reprehenderit provident sunt!</div>
+    <div class="opcao2" *ngIf="classe === 'opcao2'">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati expedita, blanditiis minus quidem excepturi beatae quam laboriosam nam labore, modi iure numquam vitae est, recusandae magnam exercitationem itaque suscipit fugit.</div>
+    <div class="opcao3" *ngIf="classe === 'opcao3'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit nihil in illum quasi cum quisquam voluptas, pariatur voluptate tempora quam distinctio blanditiis, quos sequi! Dolor fuga velit commodi! Facere!</div>
+    <div class="opcao4" *ngIf="classe === 'opcao4'">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, officia corporis. Animi, tempore. Officiis deserunt iste nihil, delectus deleniti, reiciendis quo dolor quae cumque voluptatum optio ratione eligendi adipisci eos.</div>
+
+</article>
